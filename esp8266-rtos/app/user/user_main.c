@@ -193,7 +193,7 @@ void user_init(void)
 
 //    printf("SDK version:%s\n", system_get_sdk_version());
 
-    printf("\n os start! ---- start working\n");
+    printf("\n os start! ------ start working\n");
 
     //创建数据解析队列
     xQueueUart_recv_parse_cmd = xQueueCreate(20, sizeof(Recv_Data));
