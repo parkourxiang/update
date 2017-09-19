@@ -34,8 +34,8 @@
 bool HttpRequst( uint8_t method , char * Url , char * body , uint16_t bodylen , uint8_t *buff , uint16_t bufflen )
 {
 	struct  hostent hostinfo,*phost;
-	char buf[101];
-	char hostname[100];
+	char buf[31];
+	char hostname[30];
 	char *ipaddr = NULL;
 	char *ptr , *path;
 	int ret;

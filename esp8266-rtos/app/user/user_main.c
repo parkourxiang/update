@@ -200,7 +200,7 @@ void user_init(void)
 
     //开启串口数据解析任务
     //任务说明：（该任务将对串口接收到的数据 进行解析，得到控制指令）
-    xTaskCreate(Tasck_Uart_recv_parse_cmd, (uint8 const *)"Task_pase_cmd", 512, NULL, tskIDLE_PRIORITY + 2, NULL);
+    xTaskCreate(Tasck_Uart_recv_parse_cmd, (uint8 const *)"Task_pase_cmd", 512, NULL, tskIDLE_PRIORITY + 4, NULL);
     printf("\n uart parse_cmd task created! \n");
 
     //开启数据透传任务
