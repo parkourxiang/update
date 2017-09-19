@@ -92,7 +92,7 @@ void transmit_recv_unpack_buff( struct transmission *trans ,const unsigned char 
 		{
 			if (trans->flag_recv_star)
 			{
-				if(trans->pack_recv_pointer<TRANSMISSION_CACHE_LEN)
+				if(trans->pack_recv_pointer<TRANSMISSION_CACHE_LEN) 
 				trans->pack_recv_cache_buff[trans->pack_recv_pointer++] = *buff;
 			}
 		}
